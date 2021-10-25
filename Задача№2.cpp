@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <time.h> 
 using namespace std;
-int c;
+int c, x;
 int countt = 1;
 bool f = false;
 
