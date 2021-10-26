@@ -35,29 +35,13 @@ int main()
         else f = true;
     }
     cout << "Выведем все числа, которые можно составить: " << endl;
-    if (a == 0) // чтобы 0 не был первой цифрой в числе
-    {
-        cout << " " << b << a << c << endl;
-        cout << " " << b << c << a << endl;
-        cout << " " << c << a << b << endl;
-        cout << " " << c << b << a << endl;
-    }
-    else if (b == 0) // чтобы 0 не был первой цифрой в числе
-    {
-        cout << " " << a << b << c << endl;
-        cout << " " << a << c << b << endl;
-        cout << " " << c << a << b << endl;
-        cout << " " << c << b << a << endl;
-    }
-    else
-    {
-        cout << " " << a << b << c << endl;
-        cout << " " << a << c << b << endl;
-        cout << " " << b << a << c << endl;
-        cout << " " << b << c << a << endl;
-        cout << " " << c << a << b << endl;
-        cout << " " << c << b << a << endl;
-    }
+    cout << " " << a << b << c << endl;
+    cout << " " << a << c << b << endl;
+    cout << " " << b << a << c << endl;
+    cout << " " << b << c << a << endl;
+    cout << " " << c << a << b << endl;
+    cout << " " << c << b << a << endl;
+   
     if ((a > b) && (a > c)) 
     {
     if (b > c)
