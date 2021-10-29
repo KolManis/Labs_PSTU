@@ -3,36 +3,36 @@
 // вывести самое крупное число из полученных 
 
 #include <iostream>
-using namespace std; 
+using namespace std;
 int x;
-int a, b, c;
+int a, b, c, d;
 bool f = false;
 int main()
 {
     setlocale(LC_ALL, "RU");
     cout << "Введите трехзначное число: ";
     cin >> x;
-    while (x < 100 || x>999)
-    {
-        cout << "Введите трехзначное число еще раз: ";
-        cin >> x;
-    }
+    d = x;
     a = x % 10;
     x = x / 10;
     b = x % 10;
     c = x / 10;
     while (f == false)
     {
-        if ((a == b) || (b == c) || (a == c))
+        if ((100 < d && d > 999) || ((a == b) || (b == c) || (a == c)))
         {
             cout << "Введите трехзначное число еще раз: ";
             cin >> x;
+            d = x;
             a = x % 10;
             x = x / 10;
             b = x % 10;
             c = x / 10;
         }
-        else f = true;
+        else 
+        {
+            f = true;
+        }
     }
     cout << "Выведем все числа, которые можно составить: " << endl;
     cout << " " << a << b << c << endl;
