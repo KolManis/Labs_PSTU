@@ -4,6 +4,6 @@ using namespace std;
 int i = 1;
 int main() 
 {
-	cout << ++i * i++;
+	cout << ++i * i++; // i станет равно 2. будет умножаться 2 на 2. Ответ: 4.
 	return 0;
 }
